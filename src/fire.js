@@ -1,6 +1,5 @@
-//import firebase from "firebase";
-import firebase from '@firebase/app';
-require('firebase/auth');
+import firebase from "firebase/app";
+import "firebase/auth";
 
 
 var firebaseConfig = {
@@ -11,6 +10,11 @@ var firebaseConfig = {
     messagingSenderId: "82661315788",
     appId: "1:82661315788:web:d1152ea6aeaffbc3791e69"
   };
+  // Initialize Firebase
+ const fire= firebase.initializeApp(firebaseConfig);
+ 
 
-  const fire=firebase.initializeApp(firebaseConfig);
+
   export default fire;
+  
+ 
